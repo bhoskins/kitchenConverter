@@ -1,0 +1,170 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+/***************
+  Sizes
+****************/
+
+$max-width: 1200px;
+$grid-columns: 9;
+
+/************
+  colors
+************/
+
+$primary-color: RGBA(67, 46, 127, 1); //minsk purple
+$secondary-color: RGBA(62, 12, 204, 1); //Han Purple blue looking
+$darkest-color: RGBA(39, 8, 127, 1); //Deep Blue
+$lighter-color: RGBA(78, 15, 255, 1); //Han Purple light blue
+$lightest-color: RGBA(134, 92, 255, 1); //light slate blue
+
+$displayBorder: purple;
+$convertUnitBorder: navy;
+$divBorder: navy;
+
+$display-text-color: #3b3b3b;
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  color: white;
+}
+
+div {
+  height: 100%;
+  border: 1px solid $divBorder;
+  border-radius: 10px;
+  line-height: 50px;
+}
+
+/***** Colors *******/
+
+.calc {
+  background: $primary-color;
+}
+
+.unit {
+  background: $secondary-color;
+}
+
+.save {
+  background: $lightest-color;
+}
+
+.vwr{
+  background: $lighter-color;
+}
+
+.convert {
+  background: $darkest-color;
+}
+
+.display,
+.container-heading {
+  color: $display-text-color;
+}
+
+
+/******* Neat **********/
+
+.container {
+  @include outer-container;
+  margin-top: 100px;
+}
+
+.row {
+  @include span-columns(9);
+  height: 50px;
+}
+
+/********************
+  First Row
+*********************/
+
+.convertTxt {
+  @include span-columns(2);
+}
+
+.convertToUnit {
+  @include span-columns(1);
+  border: 1px solid $convertUnitBorder;
+  height: 100%;
+}
+
+.display {
+  @include span-columns(5);
+  height: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: right;
+  border: 3px solid $displayBorder;
+  color: $display-text-color;
+}
+
+.displayUnit {
+  @include span-columns(1);
+  //@include omega;
+}
+
+/********************
+  Second Row
+*********************/
+
+.vwrHeading {
+  @include span-columns(2);
+  height: 100%;
+  text-align: center;
+  border-right: 1px solid black;
+}
+
+.vwrVolAmt,
+.vwrWtAmt {
+  @include span-columns(2);
+}
+
+.vwrVolUnit,
+.vwrWtUnit,
+.vwrEquals {
+  @include span-columns(1);
+}
+
+.vwrWtUnit {
+  @include omega;
+}
+
+/********************
+  Third Row
+*********************/
+
+.calc,
+.save,
+.unit {
+  @include span-columns(1);
+  height: 100%;
+  text-align: center;
+}
+
+.calcAC {
+  @include span-columns(2);
+  @include omega;
+  height: 100%;
+  text-align: center;
+}
+
+/********************
+  Fourth Row
+*********************/
+
+.omega {
+  @include omega;
+}
+
+.calcEqualsTop {
+  height: 100px;
+  line-height: 100px;
+}
+
+

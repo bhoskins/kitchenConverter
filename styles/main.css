@@ -1,0 +1,191 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/***************
+  Sizes
+****************/
+/************
+  colors
+************/
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  color: white; }
+
+div {
+  height: 100%;
+  border: 1px solid navy;
+  border-radius: 10px;
+  line-height: 50px; }
+
+/***** Colors *******/
+.calc {
+  background: RGBA(67, 46, 127, 1); }
+
+.unit {
+  background: RGBA(62, 12, 204, 1); }
+
+.save {
+  background: RGBA(134, 92, 255, 1); }
+
+.vwr {
+  background: RGBA(78, 15, 255, 1); }
+
+.convert {
+  background: RGBA(39, 8, 127, 1); }
+
+.display,
+.container-heading {
+  color: #3b3b3b; }
+
+/******* Neat **********/
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.row {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 100%;
+  height: 50px; }
+  .row:last-child {
+    margin-right: 0; }
+
+/********************
+  First Row
+*********************/
+.convertTxt {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 19.75788%; }
+  .convertTxt:last-child {
+    margin-right: 0; }
+
+.convertToUnit {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 8.29472%;
+  border: 1px solid navy;
+  height: 100%; }
+  .convertToUnit:last-child {
+    margin-right: 0; }
+
+.display {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 54.14736%;
+  height: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: right;
+  border: 3px solid purple;
+  color: #3b3b3b; }
+  .display:last-child {
+    margin-right: 0; }
+
+.displayUnit {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 8.29472%; }
+  .displayUnit:last-child {
+    margin-right: 0; }
+
+/********************
+  Second Row
+*********************/
+.vwrHeading {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 19.75788%;
+  height: 100%;
+  text-align: center;
+  border-right: 1px solid black; }
+  .vwrHeading:last-child {
+    margin-right: 0; }
+
+.vwrVolAmt,
+.vwrWtAmt {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 19.75788%; }
+  .vwrVolAmt:last-child,
+  .vwrWtAmt:last-child {
+    margin-right: 0; }
+
+.vwrVolUnit,
+.vwrWtUnit,
+.vwrEquals {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 8.29472%; }
+  .vwrVolUnit:last-child,
+  .vwrWtUnit:last-child,
+  .vwrEquals:last-child {
+    margin-right: 0; }
+
+.vwrWtUnit {
+  margin-right: 0; }
+
+/********************
+  Third Row
+*********************/
+.calc,
+.save,
+.unit {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 8.29472%;
+  height: 100%;
+  text-align: center; }
+  .calc:last-child,
+  .save:last-child,
+  .unit:last-child {
+    margin-right: 0; }
+
+.calcAC {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 19.75788%;
+  margin-right: 0;
+  height: 100%;
+  text-align: center; }
+  .calcAC:last-child {
+    margin-right: 0; }
+
+/********************
+  Fourth Row
+*********************/
+.omega {
+  margin-right: 0; }
+
+.calcEqualsTop {
+  height: 100px;
+  line-height: 100px; }
+
+/*# sourceMappingURL=main.css.map */
